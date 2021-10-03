@@ -7,7 +7,6 @@
   "types": "./lib/esm/index.d.ts",
   "author": "Matheus Corrêa",
   "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mathec-x/-prototypes-string.git"
