@@ -29,7 +29,13 @@ npm install prototypes-string
 - I just want to implement some string function:
 
 ``` js
+    require('prototypes-string/capitalize')
     require('prototypes-string/format')
+    require('prototypes-string/money')
+    require('prototypes-string/percent')
+    require('prototypes-string/test-mail')
+    require('prototypes-string/test-name')
+    require('prototypes-string/test-password')
 ``` 
 
 # examples
