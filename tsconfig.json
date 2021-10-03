@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "module": "esnext",
+      "moduleResolution": "node",
+      "outDir": "lib/esm",
+      "rootDir": "src",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "sourceMap": false,
+      "resolveJsonModule": false,
+      "emitDecoratorMetadata": false,
+      "experimentalDecorators": true,
+      "skipLibCheck": true,
+      "allowJs": false,
+      "declaration": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true
+    },
+    "include": [ "src" ],
+    "exclude": [
+      "node_modules"
+    ],
+    "lib": [
+      "es2015"
+    ]
+  }

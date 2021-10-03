@@ -1,0 +1,28 @@
+{
+  "name": "@prototypes/string",
+  "version": "1.0.0",
+  "description": "Add custom global string prototypes",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "author": "Matheus Corrêa",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathec-x/-prototypes-string.git"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.4",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "files": [
+    "lib"
+  ]
+}
