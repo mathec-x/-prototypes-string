@@ -1,4 +1,4 @@
-# @prototypes/string
+# prototypes-string
 
 - a way to implement some extensions to help with string and numbers manipulation
 
@@ -11,7 +11,7 @@
 
 
 ``` bash
-npm install @prototypes/string
+npm install prototypes-string
 ```
 
 ## usage
@@ -23,13 +23,13 @@ npm install @prototypes/string
 - for a full implementation
 
 ``` js
-    require('@prototypes/string')
+    require('prototypes-string')
 ```
 
 - I just want to implement some string function:
 
 ``` js
-    require('@prototypes/string/format')
+    require('prototypes-string/format')
 ``` 
 
 # examples
