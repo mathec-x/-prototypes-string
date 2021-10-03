@@ -40,7 +40,7 @@ npm install prototypes-string
 
 ``` js
 
-'matheus correa'.Format('###.###.###-##') // 'Matheus Correa'
+'matheus correa'.Capitalize() // 'Matheus Correa'
 
 ```
 
