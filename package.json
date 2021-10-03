@@ -11,6 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/mathec-x/-prototypes-string.git"
   },
+  "keywords": [
+    "helpers",
+    "prototypes",
+    "string",
+    "money",
+    "percentage",
+    "format",
+    "capitalize"
+  ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
