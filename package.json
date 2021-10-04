@@ -1,10 +1,9 @@
 {
   "name": "prototypes-string",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Add custom global string prototypes",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "author": "Matheus Corrêa",
   "license": "MIT",
   "private": false,
