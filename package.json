@@ -1,6 +1,6 @@
 {
   "name": "prototypes-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add custom global string prototypes",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -22,9 +22,7 @@
     "capitalize"
   ],
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^16.9.4",
