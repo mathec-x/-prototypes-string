@@ -4,11 +4,11 @@ declare global {
         /**
         * Returns a reCapitalized text
         */
-        Capitalize(): String
+        Capitalize(): string
     }
 }
 
-function Capitalize(this: String) {
+function Capitalize(this: string) {
     return this.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 };
 

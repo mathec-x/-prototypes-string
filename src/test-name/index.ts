@@ -4,7 +4,7 @@ declare global {
         /**
         * Regex test if match full name
         */
-        TestName(): String
+        TestName(): string
     }
 }
 

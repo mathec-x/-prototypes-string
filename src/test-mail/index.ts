@@ -4,7 +4,7 @@ declare global {
         /**
         * Regex test if match email
         */
-        TestMail(): String
+        TestMail(): string
     }
 }
 

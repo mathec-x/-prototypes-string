@@ -7,7 +7,7 @@ declare global {
         * '23'.Format('###.###.###-##') => '000.000.000-23'
         * '23'.Format('###.###.###-##', 'x') => 'xxx.xxx.xxx-23'
         */
-        Format(mask: String, placeholder?: any): String
+        Format(mask: string, placeholder?: any): string
     }
     interface Number {
         /**
@@ -16,7 +16,7 @@ declare global {
         * 23.Format('###.###.###-##') => '000.000.000-23'
         * 23.Format('###.###.###-##', 'x') => 'xxx.xxx.xxx-23'
         */
-        Format(mask: String, placeholder?: any): String
+        Format(mask: string, placeholder?: any): string
     }
 }
 
