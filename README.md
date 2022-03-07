@@ -52,6 +52,21 @@ npm install prototypes-string
 
 ```
 
+## Date Time Functions 
+
+- 
+
+```js
+const date = new Date(2022, 2, 20, 17, 30)
+
+    date.toISOString() => '2022-03-20T20:30:00.000Z';
+
+    date.Date() => '20/03/2022';
+    date.Time() => '17:30:00';
+    date.DateTime() => '20/03/2022 17:30:00';
+```
+
+
 ## Format
 
 - Returns a reformatted text from right to left with default mask as '0'
