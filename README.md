@@ -31,6 +31,8 @@ npm install prototypes-string
 ``` js
     require('prototypes-string/capitalize')
     require('prototypes-string/format')
+    require('prototypes-string/mask')
+    require('prototypes-string/math')
     require('prototypes-string/money')
     require('prototypes-string/percent')
     require('prototypes-string/test-mail')
@@ -60,6 +62,43 @@ npm install prototypes-string
 
 //or Number
 23.Format('###.###.###-##', 'x') // 'xxx.xxx.xxx-23'
+
+//or Date
+new Date('2022-03-20 17:30').Format('yyyy-mm-dd')) => '2022-03-20'
+
+```
+
+
+## Mask
+- Returns a reformatted text to cpf or cnpj or phone formatted pt-BR
+
+``` ts
+String.Mask(mask: "cpf" | "cnpj" | "phone"): String
+```
+
+## Math
+- Another way to format fractional numbers
+
+```js
+55.55.Round(-1);   // 55.6
+55.549.Round(-1);  // 55.5
+55.Round(1);       // 60
+54.9.Round(1);     // 50
+-55.55.Round(-1);  // -55.5
+-55.551.Round(-1); // -55.6
+-55.Round(1);      // -50
+-55.1.Round(1);    // -60
+1.005.Round(-2);   // 1.01
+
+55.59.Floor(-1);   // 55.5
+59.Floor(1);       // 50
+-55.51.Floor(-1);  // -55.6
+-51.Floor(1);      // -60
+
+55.51.Ceil(-1);    // 55.6
+51.Ceil(1);        // 60
+-55.59.Ceil(-1);   // -55.5
+-59.Ceil(1);       // -50
 ```
 
 ## Money

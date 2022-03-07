@@ -11,7 +11,13 @@ declare global {
         * have upper case letter
         * have lower case letter
         */
-        TestPassword(config: typeof defaultConfig ): "MinDigits" | "Number" | "LowerCase" | "UpperCase" | "SpecialChar" | "Ok"
+        TestPassword(config: {
+            minDigits?: number,
+            upperCase?: boolean,
+            number?: boolean,
+            specialChar?: boolean,
+            lowerCase?: boolean
+        }): "MinDigits" | "Number" | "LowerCase" | "UpperCase" | "SpecialChar" | "Ok"
     }
 }
 

@@ -1,5 +1,7 @@
 export * from './capitalize'
 export * from './format'
+export * from './math'
+export * from './mask'
 export * from './money'
 export * from './percent'
 export * from './test-mail'
