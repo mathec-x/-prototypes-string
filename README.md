@@ -112,6 +112,13 @@ const strtest = '23'
 
 ``` ts
 String.Mask(mask: "cpf" | "cnpj" | "phone"): String
+
+const number = 1e6;
+number.Mask('milhar') => '1.000.000';
+
+const number = 1e4;
+number.Mask('k-formatter') => '10k'
+
 ```
 
 ## Math
