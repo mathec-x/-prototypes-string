@@ -29,15 +29,16 @@ npm install prototypes-string
 - I just want to implement some string function:
 
 ``` js
-    require('prototypes-string/capitalize')
-    require('prototypes-string/format')
-    require('prototypes-string/mask')
-    require('prototypes-string/math')
-    require('prototypes-string/money')
-    require('prototypes-string/percent')
-    require('prototypes-string/test-mail')
-    require('prototypes-string/test-name')
-    require('prototypes-string/test-password')
+    require('prototypes-string/lib/capitalize')
+    require('prototypes-string/lib/date-time')
+    require('prototypes-string/lib/format')
+    require('prototypes-string/lib/mask')
+    require('prototypes-string/lib/math')
+    require('prototypes-string/lib/money')
+    require('prototypes-string/lib/percent')
+    require('prototypes-string/lib/test-mail')
+    require('prototypes-string/lib/test-name')
+    require('prototypes-string/lib/test-password')
 ``` 
 
 # examples
@@ -48,13 +49,14 @@ npm install prototypes-string
 
 ``` js
 
-'matheus correa'.Capitalize() // 'Matheus Correa'
+const name = 'matheus correa'
+    name.Capitalize() => 'Matheus Correa'
 
 ```
 
 ## Date Time Functions 
 
-- 
+- Advanced date handling
 
 ```js
 const date = new Date(2022, 2, 20, 17, 30)
@@ -64,6 +66,24 @@ const date = new Date(2022, 2, 20, 17, 30)
     date.Date() => '20/03/2022';
     date.Time() => '17:30:00';
     date.DateTime() => '20/03/2022 17:30:00';
+
+```
+
+- Time calculation
+
+```js
+const date = new Date(2022, 2, 20, 17, 30)
+
+        date.DiffSeconds('2022-03-20T21:30:00.000Z') => 3600;
+        date.DiffMinutes('2022-03-20T21:30:00.000Z') => 60;
+        date.DiffHours('2022-03-21T20:30:00.000Z') => 24;
+
+const str = '2022-02-01';
+        str.toDate().DiffHours('2023-02-01') => 8760;
+        str.toDate().DiffDays('2023-02-01') => 365;
+        str.toDate().DiffMonths('2023-02-01') => 12;
+        str.toDate().DiffYears('2023-02-01') => 1;
+
 ```
 
 
@@ -72,15 +92,18 @@ const date = new Date(2022, 2, 20, 17, 30)
 - Returns a reformatted text from right to left with default mask as '0'
 
 ``` js
-//String
-'23'.Format('###.###.###-##') // '000.000.000-23'
+const strtest = '23'
+    //String or Number
+    strtest.Format('###.###.###-##') // '000.000.000-23'
+```
 
-//or Number
-23.Format('###.###.###-##', 'x') // 'xxx.xxx.xxx-23'
+- Date format Manipulations
 
-//or Date
-new Date('2022-03-20 17:30').Format('yyyy-mm-dd')) => '2022-03-20'
-
+```js
+    //or Date
+    new Date('2022-03-20 17:30').Format('yyyy-mm-dd')) => '2022-03-20';
+    //or string Date
+    '2022-03-20T17:30:00.000Z'.Format('dd/mm/yyyy') => '20/03/2022';
 ```
 
 
