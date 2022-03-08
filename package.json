@@ -1,6 +1,6 @@
 {
   "name": "prototypes-string",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Add custom global string prototypes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
