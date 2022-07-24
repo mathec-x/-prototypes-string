@@ -12,6 +12,7 @@ declare global {
         DateTime(): string
         toDate(): Date
         isDate(): boolean
+        IsBetween(start:Date, end:Date): boolean
     }
     interface String {
         Date(): string
@@ -96,6 +97,13 @@ function DiffYears(date2) {
     return years;
 }
 
+function IsBetween(start: Date, end: Date) {
+    const self = this instanceof Date ? this : new Date(this);
+    start = start instanceof Date ? start : new Date(start);
+    end = end instanceof Date ? end : new Date(end);
+    return (self >= start && self <= end);
+}
+
 if (!Date.prototype.DiffYears) {
     Object.defineProperty(Date.prototype, 'DiffSeconds', { value: DiffSeconds });
     Object.defineProperty(Date.prototype, 'DiffMinutes', { value: DiffMinutes });
@@ -103,6 +111,7 @@ if (!Date.prototype.DiffYears) {
     Object.defineProperty(Date.prototype, 'DiffDays', { value: DiffDays });
     Object.defineProperty(Date.prototype, 'DiffMonths', { value: DiffMonths });
     Object.defineProperty(Date.prototype, 'DiffYears', { value: DiffYears });
+    Object.defineProperty(Date.prototype, 'IsBetween', { value: IsBetween });
 };
 
 
