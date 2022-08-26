@@ -25,7 +25,11 @@ declare global {
 
 function Format(mask: string, placeholder = '0') {
 
-    if (!isNaN(Date.parse(this))) {
+    if (!isNaN(Date.parse(this)) && (
+        mask.indexOf('yy') !== -1 ||
+        mask.indexOf('dd') !== -1 ||
+        mask.indexOf('mm') !== -1
+    )) {
         const self = new Date(this);
 
         if (!/T|Z/.test(this)) {

@@ -9,10 +9,16 @@ describe('String.Format', () => {
 
     });
 
-    it('Should return zero left in number', () => {
-        const target = 23;
+    it('Should return zero left in number zero', () => {
+        const target = 0;
         const test = target.Format('#####');
-        expect(test).toBe('00023');
+        expect(test).toBe('00000');
+    });
+
+    it('Should return zero left in number', () => {
+        const target = 10;
+        const test = target.Format('#####');
+        expect(test).toBe('00010');
     });
     
     it('Should format string to datetime', () => {
